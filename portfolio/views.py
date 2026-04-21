@@ -6,4 +6,8 @@ def education(request): return render(request, 'portfolio/education.html')
 def experience(request): return render(request, 'portfolio/experience.html')
 def skills(request): return render(request, 'portfolio/skills.html')
 def projects(request): return render(request, 'portfolio/projects.html')
-def contact(request): return render(request, 'portfolio/contact.html')
+def contact(request):
+    success = False
+    if request.method == 'POST':
+        success = True
+    return render(request, 'portfolio/contact.html', {'success': success})
