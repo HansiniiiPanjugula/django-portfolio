@@ -1,0 +1,45 @@
+{% extends 'portfolio/base.html' %}
+{% load static %}
+
+{% block content %}
+<section class="section">
+    <h2 class="section-title fade-in">About Me</h2>
+
+    <div class="about-grid">
+        <div class="about-text fade-in">
+            <p>
+                Hello! My name is <strong>Hansini</strong> and I enjoy creating things that live on the internet. My interest in web development started back when I decided to try editing custom Tumblr themes — turns out hacking together HTML & CSS taught me a lot about HTML & CSS!
+            </p>
+
+            <p>
+                Fast-forward to today, and I've had the privilege of learning modern technologies. My main focus these days is building accessible, inclusive products and digital experiences using <strong>Django and Python</strong>.
+            </p>
+
+            <p>
+                I am a passionate Computer Science Engineering student with a strong interest in emerging technologies and solving real-world problems.
+            </p>
+
+            <div class="traits fade-in">
+                <span class="trait-badge"><i class="fas fa-lightbulb"></i> Problem Solving</span>
+                <span class="trait-badge"><i class="fas fa-users"></i> Teamwork</span>
+                <span class="trait-badge"><i class="fas fa-paint-brush"></i> Creativity</span>
+            </div>
+        </div>
+
+        <div class="card fade-in slide-in-right">
+            <h3>Personal Info</h3>
+            <br>
+            <p><i class="fas fa-user" style="color:var(--accent-color);width:25px;"></i> <strong>Name:</strong> Hansini</p>
+            <br>
+            <p><i class="fas fa-graduation-cap" style="color:var(--accent-color);width:25px;"></i> <strong>Branch:</strong> CSE</p>
+            <br>
+            <p><i class="fas fa-map-marker-alt" style="color:var(--accent-color);width:25px;"></i> <strong>Location:</strong> India</p>
+            <br>
+            <p><i class="fas fa-envelope" style="color:var(--accent-color);width:25px;"></i> <strong>Email:</strong> your@email.com</p>
+            
+            <br><br>
+            <a href="#" class="btn"><i class="fas fa-download"></i> Download Resume</a>
+        </div>
+    </div>
+</section>
+{% endblock %}

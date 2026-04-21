@@ -1,0 +1,30 @@
+{% extends 'portfolio/base.html' %}
+{% load static %}
+
+{% block content %}
+<!-- Particles Container -->
+<div id="particles-js"></div>
+
+<section class="hero">
+    <div class="hero-left fade-in">
+        <h4>Hi, my name is</h4>
+        <h1>Hansini.</h1>
+        <h3 class="typing"></h3>
+
+        <p>
+            I'm a computer science engineering student passionate about building exceptional digital experiences. Currently, I'm focused on full-stack web development using modern technologies.
+        </p>
+
+        <div class="hero-actions">
+            <a href="/projects/" class="btn">Projects</a>
+            <a href="/contact/" class="btn" style="background: rgba(100,255,218,0.1);">Contact Me</a>
+        </div>
+    </div>
+
+    <div class="hero-right slide-in-right">
+        <div class="profile-img-container">
+            <img src="{% static 'images/profile.png' %}" onerror="this.src='https://via.placeholder.com/350/112240/64FFDA?text=Profile'" alt="Profile Photo">
+        </div>
+    </div>
+</section>
+{% endblock %}

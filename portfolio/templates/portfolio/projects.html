@@ -1,0 +1,59 @@
+{% extends 'portfolio/base.html' %}
+{% block content %}
+<section class="section">
+    <h2 class="section-title fade-in">Some Things I've Built</h2>
+
+    <div class="grid">
+        <div class="project-card fade-in">
+            <div class="project-icon" style="color: var(--accent-color);">
+                <i class="fas fa-folder-open"></i>
+            </div>
+            <h3 class="project-title">Portfolio Website v2</h3>
+            <p class="project-desc">A premium, dark-themed developer portfolio built to showcase my skills, experience, and projects. Features smooth animations and responsive design.</p>
+            <div class="project-tech">
+                <span>Django</span>
+                <span>Python</span>
+                <span>HTML/CSS</span>
+                <span>Vanilla JS</span>
+            </div>
+            <div class="project-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+        </div>
+
+        <div class="project-card fade-in">
+            <div class="project-icon" style="color: var(--accent-color);">
+                <i class="fas fa-shopping-cart"></i>
+            </div>
+            <h3 class="project-title">E-Commerce API</h3>
+            <p class="project-desc">A robust backend API for an e-commerce platform using Django Rest Framework, featuring user authentication, product management, and order processing.</p>
+            <div class="project-tech">
+                <span>DRF</span>
+                <span>Django</span>
+                <span>PostgreSQL</span>
+            </div>
+            <div class="project-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+
+        <div class="project-card fade-in">
+            <div class="project-icon" style="color: var(--accent-color);">
+                <i class="fas fa-robot"></i>
+            </div>
+            <h3 class="project-title">AI Chatbot Interface</h3>
+            <p class="project-desc">A web interface that integrates with OpenAI's API to provide a chat experience. Implemented with asynchronous requests and modern UI.</p>
+            <div class="project-tech">
+                <span>JavaScript</span>
+                <span>API</span>
+                <span>CSS</span>
+            </div>
+            <div class="project-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
