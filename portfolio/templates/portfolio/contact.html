@@ -5,25 +5,18 @@
 
     <div class="contact-container fade-in">
         <p>
-            Although I'm not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!
+            Although I'm not currently looking for any new opportunities, my inbox is always open. Whether you have a
+            question or just want to say hi, I'll try my best to get back to you!
         </p>
 
-        <form class="contact-form" method="POST" action="{% url 'contact' %}">
-            {% csrf_token %}
-            {% if success %}
-                <p style="color: var(--accent-color); margin-bottom: 15px; text-align: center; font-weight: bold;">Message sent successfully</p>
-            {% endif %}
-            <div class="input-group">
-                <input type="text" name="name" placeholder="Your Name" required>
+        <div class="card" style="margin-top: 30px; text-align: center; width: 100%;">
+            <div style="font-size: 18px; color: var(--text-primary); margin-bottom: 20px;">
+                <i class="fas fa-envelope" style="color: var(--accent-color); margin-right: 10px;"></i> hans@gmail.com
             </div>
-            <div class="input-group">
-                <input type="email" name="email" placeholder="Your Email" required>
+            <div style="font-size: 18px; color: var(--text-primary); margin-bottom: 0;">
+                <i class="fas fa-phone" style="color: var(--accent-color); margin-right: 10px;"></i> +91XXXXXXXXX
             </div>
-            <div class="input-group">
-                <textarea name="message" placeholder="Your Message" required></textarea>
-            </div>
-            <button type="submit" class="contact-btn">Say Hello <i class="fas fa-paper-plane" style="margin-left: 8px;"></i></button>
-        </form>
+        </div>
     </div>
 </section>
 {% endblock %}

@@ -15,10 +15,10 @@
 }
 
 .light-mode {
-    --bg-color: #f8f9fa;
-    --card-bg: #ffffff;
-    --text-primary: #333333;
-    --text-secondary: #555555;
+    --bg-color: #ffffff;
+    --card-bg: #f8f9fa;
+    --text-primary: #0A192F;
+    --text-secondary: #333333;
     --accent-color: #007bff;
     --nav-blur: rgba(255, 255, 255, 0.85);
 }

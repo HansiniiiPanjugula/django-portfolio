@@ -99,8 +99,8 @@ const savedTheme = localStorage.getItem('theme');
 if (savedTheme === 'light') {
     body.classList.add('light-mode');
     if (icon) {
-        icon.classList.remove('fa-moon');
-        icon.classList.add('fa-sun');
+        icon.classList.remove('fa-sun');
+        icon.classList.add('fa-moon');
     }
 }
 
@@ -110,12 +110,12 @@ if (themeBtn) {
         
         if (body.classList.contains('light-mode')) {
             localStorage.setItem('theme', 'light');
-            icon.classList.remove('fa-moon');
-            icon.classList.add('fa-sun');
-        } else {
-            localStorage.setItem('theme', 'dark');
             icon.classList.remove('fa-sun');
             icon.classList.add('fa-moon');
+        } else {
+            localStorage.setItem('theme', 'dark');
+            icon.classList.remove('fa-moon');
+            icon.classList.add('fa-sun');
         }
     });
 }
